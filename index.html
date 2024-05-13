@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Mother's Day!</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add funfetti background */
+    body {
+      background-image: url('funfetti.jpg');
+      background-repeat: repeat;
+    }
+
+    /* Add animation to header */
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    h1 {
+      animation: float 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Happy Mother's Day!</h1>
+    <div class="gif-container">
+      <img src="mothers_day_gif1.gif" alt="Happy Mother's Day GIF">
+      <img src="mothers_day_gif2.gif" alt="Happy Mother's Day GIF">
+    </div>
+  </header>
+  <main>
+    <div class="message-container">
+      <h2>Leave a Message for Mom:</h2>
+      <textarea id="message" rows="4" cols="50" placeholder="Write your message here..."></textarea>
+    </div>
+  </main>
+</body>
+</html>
